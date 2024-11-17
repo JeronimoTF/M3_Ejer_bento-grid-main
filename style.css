@@ -1,0 +1,167 @@
+:root{
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+
+    font-family:italia;
+    src: url(assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+
+}
+
+@font-face {
+
+    font-family:katz;
+    src: url(assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+section{
+
+    display: flex;
+    gap: 1rem;
+    
+}
+
+body{
+
+    padding: 100px;
+    background-color: white;
+
+}
+
+.caja{
+
+    font-family: katz;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    margin: 0;
+    border:none;
+    font-weight: bold;
+
+}
+
+#cursiva,#quaker{
+    font-family: italia;
+}
+
+#ama{
+    color: var(--Yellow-500);
+}
+
+#quaker{
+    color: var(--Purple-500);
+}
+
+#pcorto{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+
+.c1{
+
+    background-color:var(--Purple-500);
+    color: white;
+    font-size: 90px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: c1;
+
+} 
+
+.c2{
+
+    background-color: white;
+    font-size: 70px;
+    color: black;
+    justify-content: start;
+    align-items: end;
+    padding-left:40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-area: c2;
+}
+
+.c3{
+
+    background-color: var(--Yellow-500);
+    padding-left: 40px;
+    padding-top:40px;
+    padding-right: 40px;
+    justify-content: start;
+    align-items: start;
+    font-size: 70px;
+    color: black;
+    grid-area: c3;
+    
+}
+
+.c4{
+
+    background-color: var(--Purple-100);
+    font-size: 70px;
+    color:black;
+    padding-left: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    justify-content: start;
+    grid-area: c4;
+
+}
+
+.c5{
+
+    background-color: var(--Purple-500);
+    color: white;
+    font-size:70px;
+    justify-content: center;
+    align-items: center;
+    grid-area: c5;
+}
+
+.c6{
+
+    background-color: white;
+    font-size: 90px;
+    justify-content: start;
+    align-items: start;
+    grid-area: c6;
+
+}
+
+.c7{
+
+    background-color: var(--Yellow-100);
+    font-size: 70px;
+    justify-content: start;
+    align-items: center;
+    padding:40px;
+    grid-area: c7;
+}
+
+.c8{
+
+    background-color: var(--Yellow-500);
+    padding-left:40px;    
+    padding-bottom:40px;
+    padding-top:40px ;
+    font-size: 70px;
+    align-content: space-between;
+    justify-content: start;
+    grid-area: c8;
+}
+
+@media screen and (min-width: 1000px) {
+    .contenedor-conciertos{
+        grid-template-areas:"c7 c1 c1 c4"
+                            "c8 c2 c3 c4"
+                            "c8 c6 c5 c5";
+    }
+}
